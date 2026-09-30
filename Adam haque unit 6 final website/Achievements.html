@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.magnifier.js">
+</script>       
+
+	
+	
+	
+		<script type="text/javascript">
+alert("My achievements!");
+</script>
+	
+	
+	
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="AdamsStyles.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style type="text/css">
+#LeftContainer {
+    background-color: #A71A1D;
+    margin: 5px;
+    float: left;
+    height: 750px;
+    width: 800px;
+	border: 5px solid #010101;
+}
+	
+#RightContainer {
+    background-color: #A71A1D;
+    margin-left: 10px;
+	margin-bottom: 5px;
+		margin-top: 5px;
+
+    float: left;
+    height: 500px;
+    width: 650px;
+	border: 5px solid #010101;
+	
+}
+	
+	#Heading {
+    background-color: #FFFFFF;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 90px;
+    width: 480px;
+	Font-size: 80px;
+		
+}
+	
+	#Textbox {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 290px;
+    width: 700px;
+	font-size: 25px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding-left: 20px;
+}
+	
+	#Picture1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+#Picture2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+	#Video1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 405px;
+}
+	
+		#Video2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+   margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+<body onLoad="show5()">
+	
+	<span id="liveclock" style="position:absolute;left:100;top:0;">
+</span>
+
+<script language="JavaScript">
+/*
+Upper Left Corner Live Clock Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+function show5(){
+ if (!document.layers&&!document.all&&!document.getElementById)
+ return
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+ var dn="AM" 
+ if (hours>12){
+ dn="PM"
+ hours=hours-12
+ }
+ if (hours==0)
+ hours=12
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<font size='5' face='Arial' ><b><font size='1'>Current Time:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+</script>
+
+	
+}
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+}
+	
+#Picture1 {
+    background-color: #FFFBFB;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 240px;
+    width: 300px;
+	overflow: hidden;
+}
+	
+#Picture2 {
+       background-color: #FFFBFB;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 240px;
+    width: 300px;
+	overflow: hidden;
+}
+</style>
+</head>
+<div id="clock"></div>
+	<style>#clock {
+  font-size: 50px;
+  font-family: Calibri;
+	background: white;
+	border-bottom: 1px solid #000000;
+}
+	</style>
+<script>
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+
+  document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// update every second
+setInterval(updateClock, 1000);
+updateClock(); // run immediately
+</script>
+<body>
+<div id="Banner"><h2>Design. Develop. Deliver Excellence</h2></div>
+<div id="Navigation">
+	
+	<div class="topnav">
+  <a href="Homepage.html"><i class="fa-solid fa-house"></i>   Home</a>
+  <a  href="Skills.html"><i class="fa-solid fa-hand-fist"></i>             Skills</a>
+  <a class="active" href="Achievements.html"><i class="fa-solid fa-bullseye"></i>          Achievements</a>
+  <a href="Experiance.html"><i class="fa-solid fa-chart-line"></i>          Experience</a>
+  <a href="Personal Life.html"><i class="fa-solid fa-person-dots-from-line"></i> Personal life</a>
+  
+		
+		
+<a href="Contact.html"><i class="fa-solid fa-address-card"></i>          Contact</a>
+</div>
+	
+	
+	</div>
+	<div id="Container">
+	  <div id="LeftContainer">
+ 
+           
+          <div id="Heading">
+            <h1>What I bring to the Table
+</h1></div>
+		  <div id="Textbox">
+				<p>Throughout my journey as a web  developer, I have dedicated myself to mastering key skills and completing  several impactful projects that demonstrate my passion and commitment to the  craft. From building responsive websites to working with modern frameworks and  tools, I have continuously pushed myself to learn and grow. My achievements  include successfully developing portfolio sites, contributing to open-source  projects, and earning certifications that validate my technical abilities. I am  eager to bring my enthusiasm, creativity, and technical expertise to a dynamic team as a junior web developer and grow further in this  exciting industry..</p>
+</div>
+			  
+
+   
+      <div id="Picture1"><img src="Images/Screenshot 2025-10-03 151409.png"  class="magnify" width="300" height="240" alt=""/></div>
+		<div id="Picture2"><img src="Images/Screenshot 2025-10-03 151511.png"  class="magnify" width="300" height="240" alt=""/></div>
+  
+		
+		</div>
+
+		
+<div id="RightContainer">
+<div id="Video1">
+<video width="400" height="200" controls="controls" >
+  <source src="Videos/acheivemnt videos.mp4" type="video/mp4">
+</video>
+<div id="Video2">
+  <video width="400" height="200" controls="controls" >
+    <source src="Videos/achievment2.mp4" type="video/mp4">
+  </video>
+</div>
+	</div>
+			
+</div>
+		</div>
+	
+	
+	<div id="Footer"><h3><img src="Images/email-icon-free-vector.jpg" width="39" height="39" alt=""/>Adamhaque2020@gmail.com<br>
+<img src="Images/smartphone-icon.jpg" width="39" height="39" alt=""/>+446755799953 </h3></div>
+</body>
+</html>

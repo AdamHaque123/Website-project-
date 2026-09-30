@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.magnifier.js">
+</script>       
+
+    
+
+	<script type="text/javascript">
+alert("Welcome to my home page!");
+</script>
+
+	
+	
+	
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="AdamsStyles.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style type="text/css">
+#LeftContainer {
+    background-color: #A71A1D;
+    margin: 5px;
+    float: left;
+    height: 500px;
+    width: 950px;
+	border: 5px solid #010101;
+}
+	
+#RightContainer {
+    background-color: #A71A1D;
+    margin-left: 10px;
+	margin-bottom: 5px;
+		margin-top: 5px;
+
+    float: left;
+    height: 500px;
+    width: 650px;
+	border: 5px solid #010101;
+}
+	
+	#Heading {
+    background-color: #FFFFFF;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 90px;
+    width: 480px;
+	Font-size: 80px;
+}
+	
+	#Textbox {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 350px;
+    width: 600px;
+	font-size: 25px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding-left: 20px;
+	
+}
+	
+	#Picture1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+#Picture2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+	#Video1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 270px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+
+
+	
+}
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body onLoad="show5()">
+	
+	<span id="liveclock" style="position:absolute;left:0;top:0;">
+</span>
+
+<script language="JavaScript">
+/*
+Upper Left Corner Live Clock Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+function show5(){
+ if (!document.layers&&!document.all&&!document.getElementById)
+ return
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+ var dn="AM" 
+ if (hours>12){
+ dn="PM"
+ hours=hours-12
+ }
+ if (hours==0)
+ hours=12
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<font size='5' face='Arial' ><b><font size='1'>Current Time:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+</script>
+
+	
+	
+	
+	
+	
+	
+<div id="Banner"><h2>Design. Develop. Deliver Excellence</h2></div>
+<div id="Navigation">
+	
+	<div class="topnav">
+  <a class="active" href="Homepage.html"><i class="fa-solid fa-house"></i>   Home</a>
+  <a href="Skills.html"><i class="fa-solid fa-hand-fist"></i>             Skills</a>
+  <a href="Achievements.html"><i class="fa-solid fa-bullseye"></i>          Achievements</a>
+  <a href="Experiance.html"><i class="fa-solid fa-chart-line"></i>          Experience</a>
+  <a href="Personal Life.html"><i class="fa-solid fa-person-dots-from-line"></i> Personal life</a>
+  
+		
+		
+<a href="Contact.html"><i class="fa-solid fa-address-card"></i>          Contact</a>
+</div>
+	
+	
+	</div>
+	<div id="Container">
+		<div id="LeftContainer">
+		<div id="Picture1"><img src="Images/canelo-vs-crawford.jpg"  class="magnify" width="425" height="220" alt=""/></div>
+		<div id="Picture2"><img src="Images/Screenshot 2025-10-02 155211.png"  class="magnify" width="425" height="220" alt=""/></div>
+		<div id="Video1">
+          <video width="425" height="220" id="Video" controls="controls" >
+            <source src="Videos/videoplayback.mp4" type="video/mp4">
+          </video>
+		</div>
+	  </div>
+		
+		<div id="RightContainer">
+			
+		<div id="Heading"><h1>About me</h1></div>
+			
+			<div id="Textbox">
+				<p>My name is Adam Haque, and I am applying for the Web Developer position at Web House Design. I am a passionate and dedicated aspiring web developer with hands-on experience in HTML and CSS, building responsive and user-friendly websites. Currently, I am advancing my knowledge by studying Level 3 IT BTEC, where I am deepening my understanding of web technologies and development best practices. Through my projects, I have developed strong skills in crafting clean, efficient code and designing visually appealing layouts that enhance user experience. I am eager to continue growing my expertise and contribute to the success of Web House Design.</p>
+			
+			</div>
+		
+		
+		</div>
+	  
+	  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	<div id="Footer"><h3><img src="Images/email-icon-free-vector.jpg" width="39" height="39" alt=""/>Adamhaque2020@gmail.com<br>
+<img src="Images/smartphone-icon.jpg" width="39" height="39" alt=""/>+446755799953 </h3></div>
+</body>
+</html>

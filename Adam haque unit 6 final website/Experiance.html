@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.magnifier.js">
+</script>       
+
+		<script type="text/javascript">
+alert("Have a look at my expierences!");
+</script>
+	
+	
+	
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="AdamsStyles.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style type="text/css">
+#LeftContainer {
+    background-color: #A71A1D;
+    margin: 5px;
+    float: left;
+    height: 750px;
+    width: 800px;
+	border: 5px solid #010101;
+}
+	
+#RightContainer {
+    background-color: #A71A1D;
+    margin-left: 10px;
+	margin-bottom: 5px;
+		margin-top: 5px;
+
+    float: left;
+    height: 500px;
+    width: 650px;
+	border: 5px solid #010101;
+	
+}
+	
+	#Heading {
+    background-color: #FFFFFF;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 90px;
+    width: 480px;
+	Font-size: 80px;
+		
+}
+	
+	#Textbox {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 290px;
+    width: 700px;
+	font-size: 25px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding-left: 20px;
+}
+	
+	#Picture1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+#Picture2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+	#Video1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 405px;
+}
+	
+		#Video2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+   margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 400px;
+	
+}
+
+
+
+	
+}
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+}
+	
+#Picture1 {
+    background-color: #FFFBFB;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 240px;
+    width: 300px;
+	overflow: hidden;
+}
+	
+#Picture2 {
+       background-color: #FFFBFB;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 240px;
+    width: 300px;
+	overflow: hidden;
+}
+</style>
+</head>
+<div id="clock"></div>
+	<style>#clock {
+  font-size: 50px;
+  font-family: Calibri;
+	background: white;
+	border-bottom: 1px solid #000000;
+}
+	</style>
+<script>
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+
+  document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// update every second
+setInterval(updateClock, 1000);
+updateClock(); // run immediately
+</script>
+<body>
+<div id="Banner"><h2>Design. Develop. Deliver Excellence</h2></div>
+<div id="Navigation">
+	
+	<div class="topnav">
+  <a href="Homepage.html"><i class="fa-solid fa-house"></i>   Home</a>
+  <a  href="Skills.html"><i class="fa-solid fa-hand-fist"></i>             Skills</a>
+  <a href="Achievements.html"><i class="fa-solid fa-bullseye"></i>          Achievements</a>
+  <a class="active" href="Experiance.html"><i class="fa-solid fa-chart-line"></i>          Experiance</a>
+  <a href="Personal Life.html"><i class="fa-solid fa-person-dots-from-line"></i> Personal life</a>
+  
+		
+		
+<a href="Contact.html"><i class="fa-solid fa-address-card"></i>          Contact</a>
+</div>
+	
+	
+	</div>
+	<div id="Container">
+	  <div id="LeftContainer">
+ 
+           
+          <div id="Heading">
+        <h1>Proven results, Real impact Experiance that speaks for itself</h1></div>
+		  <div id="Textbox">
+				<p>I'm currently studying Level 3 IT  in college, where I'm building a strong foundation in digital technologies and  problem-solving. As part of my course, I've recently begun learning HTML and  CSS — and while I'm new to coding, I&rsquo;ve quickly developed a passion for  creating clean, functional, and visually engaging websites. Every project is an  opportunity to grow my skills and challenge myself creatively. I'm eager to  keep learning, improving, and turning my knowledge into real-world results.  This is just the beginning of my journey into web development, and I&rsquo;m excited  about where it&rsquo;s heading.</p>
+</div>
+			  
+
+   
+      <div id="Picture1"><img src="Images/Screenshot 2025-10-04 231900.png" class="magnify" width="300" height="240" alt=""/></div>
+		<div id="Picture2"><img src="Images/Screenshot 2025-10-04 232012.png" class="magnify" width="300" height="240" alt=""/></div>
+  
+		
+		</div>
+
+		
+<div id="RightContainer">
+<div id="Video1">
+<video width="400" height="200" controls="controls" >
+  <source src="Videos/Experiance.mp4" type="video/mp4">
+</video>
+<div id="Video2">
+  <video width="400" height="200" controls="controls" >
+    <source src="Videos/experiance2.mp4" type="video/mp4">
+  </video>
+</div>
+	</div>
+			
+</div>
+		</div>
+	
+	
+	<div id="Footer"><h3><img src="Images/email-icon-free-vector.jpg" width="39" height="39" alt=""/>Adamhaque2020@gmail.com<br>
+<img src="Images/smartphone-icon.jpg" width="39" height="39" alt=""/>+446755799953 </h3></div>
+</body>
+</html>

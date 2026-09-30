@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="simplegallery.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="simplegallery.js">
+
+/***********************************************
+* Simple Controls Gallery- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery1", //ID of main gallery container,
+	dimensions: [700, 220], //width/height of gallery in [pixels, pixels] or ['percentage%', pixels]
+	imagearray: [
+		["Images/IT1.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", ""],
+		["Images/IT2.png", "http://en.wikipedia.org/wiki/Cave", "", ""],
+		["Images/IT3.png", "", "", ""],
+		["Images/IT4.png", "", "", ""],
+		["http://dynamicdrive.com/dynamicindex4/autumn.jpg", "", "", ""]
+	],
+	autoplay: [true, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+	persist: false,
+	scaleimage: 'both', //valid values are 'both', 'width', or 'none'
+	fadeduration: 500, //transition duration (milliseconds)
+	oninit:function(){ //event that fires when gallery has initialized/ ready to run
+	},
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+})
+
+</script>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<script type="text/javascript">
+alert("These are skills!");
+</script>
+	
+	
+	
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="AdamsStyles.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style type="text/css">
+#LeftContainer {
+    background-color: #A71A1D;
+    margin: 5px;
+    float: left;
+    height: 750px;
+    width: 800px;
+	border: 5px solid #010101;
+}
+	
+#RightContainer {
+    background-color: #A71A1D;
+    margin-left: 10px;
+	margin-bottom: 5px;
+		margin-top: 5px;
+
+    float: left;
+    height: 500px;
+    width: 650px;
+	border: 5px solid #010101;
+	
+}
+	
+	#Heading {
+    background-color: #FFFFFF;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 90px;
+    width: 480px;
+	Font-size: 80px;
+		
+}
+	
+	#Textbox {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 290px;
+    width: 700px;
+	font-size: 20px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding-left: 20px;
+}
+	
+	#Picture1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 24px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 700px;
+}
+	
+#Picture2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+    height: 220px;
+    width: 425px;
+}
+	
+	#Video1 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 405px;
+}
+	
+		#Video2 {
+    background-color: #FFFBFB;
+	border: 5px solid #010101;
+   margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+
+
+	
+}
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+}
+	<body onLoad="show5()">
+	
+	<span id="liveclock" style="position:absolute;left:0;top:0;">
+</span>
+
+<script language="JavaScript">
+/*
+Upper Left Corner Live Clock Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+function show5(){
+ if (!document.layers&&!document.all&&!document.getElementById)
+ return
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+ var dn="AM" 
+ if (hours>12){
+ dn="PM"
+ hours=hours-12
+ }
+ if (hours==0)
+ hours=12
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<font size='5' face='Arial' ><b><font size='1'>Current Time:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+<script>
+	
+
+	
+
+</style>
+</head>
+
+<body>
+<div id="Banner"><h2>Design. Develop. Deliver Excellence</h2></div>
+<div id="Navigation">
+	
+	<div class="topnav">
+  <a href="Homepage.html"><i class="fa-solid fa-house"></i>   Home</a>
+  <a class="active" href="Skills.html"><i class="fa-solid fa-hand-fist"></i>             Skills</a>
+  <a href="Achievements.html"><i class="fa-solid fa-bullseye"></i>          Achievements</a>
+  <a href="Experiance.html"><i class="fa-solid fa-chart-line"></i>          Experience</a>
+  <a href="Personal Life.html"><i class="fa-solid fa-person-dots-from-line"></i> Personal life</a>
+  
+		
+		
+<a href="Contact.html"><i class="fa-solid fa-address-card"></i>          Contact</a>
+</div>
+	
+	
+	</div>
+	<div id="Container">
+	  <div id="LeftContainer">
+ 
+           
+          <div id="Heading"><h1>Where Passion Meets Programming
+</h1></div>
+		  <div id="Textbox">
+				<p>I’m an enthusiastic junior web developer just starting my journey with HTML and CSS, backed by a Level 3 IT qualification that has given me a strong technical foundation. While I’m new to front-end development, I’m passionate about web design and eager to apply my growing skills in a practical setting. I’m dedicated to learning best practices, writing clean and efficient code, and creating websites that offer a great user experience. Joining Web House Design would be a fantastic opportunity for me to contribute my fresh perspective and continue developing my abilities while helping build engaging, responsive websites for your clients.
+</p></div>
+			  
+
+   
+      <div id="Picture1"><div id="simplegallery1" class="simplegallery"></div></div>
+		
+  
+		
+	  </div>
+
+		
+<div id="RightContainer">
+<div id="Video1">
+  <video width="400" height="200" controls="controls" >
+    <source src="Videos/What Do Software Engineers ACTUALLY Do (2).mp4" type="video/mp4">
+  </video>
+	
+	<div id="Video2">
+		<video width="400" height="200" controls="controls" >
+    <source src="Videos/How I Learned to Code in 4 Months & Got a Job! (1).mp4" type="video/mp4">
+  </video>
+</div>
+	</div>
+			
+</div>
+		</div>
+	
+	
+	<div id="Footer"><h3><img src="Images/email-icon-free-vector.jpg" width="39" height="39" alt=""/>Adamhaque2020@gmail.com<br>
+<img src="Images/smartphone-icon.jpg" width="39" height="39" alt=""/>+446755799953 </h3></div>
+</body>
+</html>
